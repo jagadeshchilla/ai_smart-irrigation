@@ -1,0 +1,19 @@
+.UseCase__item{
+    padding: 1rem;
+    border-bottom: 2px solid #f8cc0586;
+    border-right: 2px solid  #f8cc0586;
+    margin-top: 10px;
+
+    border-radius: 0.5rem;
+}
+
+
+.UseCase__item h5{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.UseCase__item p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}

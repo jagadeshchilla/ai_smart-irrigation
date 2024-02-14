@@ -1,0 +1,156 @@
+
+.header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+/* styles.css */
+
+.logo img {
+    width: 30%;
+    height: auto;
+}
+
+
+.menu {
+margin-bottom: 0;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.header .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .header .nav_right {
+    display: flex;
+    align-items: center;
+  }
+  .header .nav_btns {
+    display: flex;
+    align-items: center;
+  }
+.nav_item a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav_item a:hover {
+    color: inherit;
+}
+
+:root {
+    --secondary-color: green;
+}
+.nav_item a.active__link {
+    color: var( --secondary-color);
+}
+.menu.align-items-center-shift { align-items: center; position: relative; }
+
+.menu.align-items-center-shift .nav_item { position: relative; top: -1px; }
+
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var( --heading-color);
+    display: none;
+}
+.sticky__header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    z-index: 999;
+}
+.btn {
+    background-color: green; /* Change button color to green */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: darkgreen; /* Change button color on hover */
+  }
+  
+  .primary__btn a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent (white) */
+  }
+
+  
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .btn {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+  }
+  .btn.primary__btn {
+    background-color: green;
+    color: white;
+    border-radius: 20px; /* adjust this value to change the roundness of the corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* adjust the color and blur radius to your liking */
+    padding: 9px 4px; /* adjust the padding to your liking */
+    text-decoration: none; /* remove any underline from the link */
+    font-weight: normal ;
+    margin-left: 20px;
+    width: 100px; /* add some boldness to the text */
+  }
+
+/*======make it responsive======= */
+
+@media only screen and (max-width:992px){
+    .logo img{
+        width: 20%;
+    }
+
+    .navigation{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0, 0, 0.411);
+        z-index: 999;
+        display: none;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 75%);
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        line-height: 0.5rem;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .show__menu{
+        display: block;
+    }
+
+    .mobile__menu{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .logo img{
+        width: 45%;
+    }
+
+    .menu{
+        width: calc(100% - 50%);
+    }
+}

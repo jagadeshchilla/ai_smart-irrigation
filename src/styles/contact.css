@@ -1,0 +1,88 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.isolate {
+  isolation: isolate;
+  background-color: white;
+  padding: 24px 24px;
+  max-width: 640px; /* Adjust based on your layout */
+  margin: 0 auto;
+}
+
+/* Gradient Background */
+.gradient-background {
+  position: absolute;
+  top: -160px; /* Adjust based on your preference */
+  left: 50%;
+  width: 578px; /* Half of your original width to simulate aspect ratio */
+  height: 339px; /* Half of your original height to simulate aspect ratio */
+  background: linear-gradient(to top right, #ff80b5, #9089fc);
+  opacity: 0.3;
+  transform: translateX(-50%) rotate(30deg);
+  /* Custom polygon clip-path */
+  clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);
+}
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.text-gray-600 {
+  color: #4B5563;
+}
+
+/* Form inputs */
+.input-text,
+.select-country,
+.textarea-message {
+  width: 100%;
+  padding: 8px 14px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid #D1D5DB; /* gray-300 */
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-text:focus,
+.select-country:focus,
+.textarea-message:focus {
+  outline: 2px solid #4F46E5; /* indigo-600 */
+  outline-offset: 2px;
+}
+
+/* Button */
+.button-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+  background-color: #4F46E5; /* indigo-600 */
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #4338CA; /* Adjust for hover effect */
+}
+
+/* This is a very basic representation. Tailwind's utility classes provide a lot more functionality and responsiveness that you'd need to manually code in CSS. */
+
+/* Note: This CSS does not include the complete functionality of Headless UI components or the exact responsive behavior provided by Tailwind's sm:, lg: prefixes, etc. For full responsiveness and interactive features, you'd need to incorporate media queries and JavaScript where necessary. */
