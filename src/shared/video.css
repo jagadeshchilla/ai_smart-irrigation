@@ -1,0 +1,17 @@
+.video-feed{
+    margin-left: 20px;
+    align-items: center;
+
+}
+
+.video-feed h5{
+    margin-left: 100px;
+    font-weight: bold;
+    color: rgb(73, 111, 35);
+}
+.video-feed img{
+    border-radius: 30px;
+    border-color: 1px solid greenyellow;
+    width: 400px;
+    height: 300px;
+}

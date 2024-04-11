@@ -1,0 +1,29 @@
+.about{
+    margin-top: 70px;
+    border-radius: 1px;
+    border-color: rgb(39, 116, 22);
+    background-color: rgb(218, 244, 203);
+}
+
+.plant-img img{
+    width: 330%;
+    height: 357px;
+    border-radius: 5px;
+    border: 0.5px solid var(--secondary-color);
+    object-fit: cover;
+}
+.mission{
+    background-image: url('../assets/images/mission.jpg');
+    background-size: cover; /* Scale the image to cover the entire element */
+  background-position: center;
+  height: 500px; /* Example height */
+  width: 100%; 
+  margin-bottom: 30px;
+}
+.mission-title h1{
+    color: white;
+    font-weight: bold;
+    text-decoration: solid;
+    margin-top: 80px;
+}
+

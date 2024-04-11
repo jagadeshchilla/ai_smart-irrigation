@@ -2,41 +2,42 @@ import React from 'react'
 import TeamCard from './TeamCard';
 import {Col} from 'reactstrap';
 import t1 from '../../assets/images/Alex.jpg';
-
+import t4 from '../../assets/images/Navi.jpg'
 import t3 from '../../assets/images/Alex friend2.jpg';
-
+import t2 from '../../assets/images/Alex Friend.jpg';
 import t6 from '../../assets/images/jaga.jpg';
+import t5 from '../../assets/images/nikki.jpg';
 
 const servicesData =[
     {
         imgUrl:t1,
         Name:'Alex',
-        Role:'Co-Founder / CEO',
-    },
-    {
-        imgUrl:t1,
-        Name:'lisa',
-        Role:'Co-Founder / CEO',
+        Role:'Team Leader',
     },
     {
         imgUrl:t3,
-        Name:'ganesh',
-        Role:'BusinessRelations',
+        Name:'Jignasa',
+        Role:'B.Tech Cse',
     },
     {
-        imgUrl:t1,
+        imgUrl:t2,
+        Name:'Gopi',
+        Role:'B.Tech Cse',
+    },
+    {
+        imgUrl:t4,
         Name:'Naveen',
-        Role:'Front-end-Developer',
+        Role:'B.Tech Cse',
     },
     {
-        imgUrl:t3,
+        imgUrl:t5,
         Name:'Nikhith',
-        Role:'Designer',
+        Role:'B.Tech Cse',
     },
     {
         imgUrl:t6,
         Name:'Jagadesh',
-        Role:'Software-Developer',
+        Role:'B.Tech Cse',
     },
 ]
 const TeamList = () => {

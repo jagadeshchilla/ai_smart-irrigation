@@ -10,9 +10,14 @@ const nav_links=[
     path:'/home',
     display:'Home'
   },
+  
   {
     path:'/about',
     display:'About'
+  },
+  {
+    path:'/profile',
+    display:'Profile'
   },
   {
     path:'/projects',
@@ -48,7 +53,7 @@ useEffect(() => {
   const toggleMenu  = () => menuRef.current.classList.toggle('show__menu');
   return (
     <header className="header" ref={headerRef}>
-      <Container>
+      <Container className='nav'>
         <Row>
           <div className="nav_wrapper d-flex align-items-center justify-content-between">
             {/* =================logo========== */}
