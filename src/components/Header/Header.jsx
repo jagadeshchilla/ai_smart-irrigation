@@ -19,10 +19,7 @@ const nav_links=[
     path:'/profile',
     display:'Profile'
   },
-  {
-    path:'/projects',
-    display:'Projects'
-  },
+  
   {
     path:'/services',
     display:'Services'
